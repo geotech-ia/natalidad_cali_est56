@@ -8,7 +8,7 @@ SUM(nac_2007) AS nac_2007, SUM(nac_2008) AS nac_2008, SUM(nac_2009) AS nac_2009,
 SUM(nac_2011) AS nac_2011, SUM(nac_2012) AS nac_2012, SUM(nac_2013) AS nac_2013, SUM(nac_2014) AS nac_2014,
 SUM(nac_2015) AS nac_2015, SUM(nac_2016) AS nac_2016, SUM(nac_2017) AS nac_2017
 FROM manzanas_cali_nacimientos
-WHERE tipo_suelo = 'Urbano'
+WHERE tipo_suelo = 'Rural'
 GROUP BY idbrrver, barrvere, comcor 
 ORDER BY total DESC, nac_2000, nac_2001, nac_2002, nac_2003, nac_2004, nac_2005, nac_2006, nac_2007, nac_2008, nac_2009,
 nac_2010, nac_2011, nac_2012, nac_2013, nac_2014, nac_2015, nac_2016, nac_2017;
